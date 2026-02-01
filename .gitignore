@@ -1,0 +1,35 @@
+# Node
+node-backend/node_modules/
+node-backend/.env
+node-backend/.env.local
+node-backend/package-lock.json
+
+# Python
+python-sentiment-service/.venv/
+python-sentiment-service/__pycache__/
+python-sentiment-service/*.pyc
+python-sentiment-service/.pytest_cache/
+python-sentiment-service/.env
+
+# Virtualenv at repo root (if used)
+.venv/
+
+# Logs
+*.log
+logs/
+
+# Editor directories
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NPM debug
+npm-debug.log*
+
+# Misc
+coverage/
+dist/
+build/

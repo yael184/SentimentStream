@@ -3,9 +3,9 @@
 Small demo project that streams news headlines and sentiment analysis.
 
 Structure
-- `node-backend/` — Node.js socket server that fetches news headlines and emits `sentiment_update` events.
-- `python-sentiment-service/` — FastAPI service that analyzes sentiment (VADER) and exposes `/analyze`.
-- `frontend/` — Simple client that connects to the Node backend.
+- `node-backend/` - Node.js socket server that fetches news headlines and emits `sentiment_update` events.
+- `python-sentiment-service/` - FastAPI service that analyzes sentiment (VADER) and exposes `/analyze`.
+- `frontend/` - Simple client that connects to the Node backend.
 
 Quickstart (Windows PowerShell)
 

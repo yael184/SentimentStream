@@ -12,7 +12,7 @@ Quickstart (Windows PowerShell)
 1) Node backend
 
 ```powershell
-cd "d:\node-python\node-backend"
+cd "node-backend"
 copy .env.example .env    # then open .env and fill NEWS_API_KEY
 npm install
 npm start
@@ -20,14 +20,14 @@ npm start
 
 2) Python sentiment service
 
-This project uses a virtualenv at `D:\node-python\.venv` in this workspace. If you need to recreate:
+This project uses a virtualenv at `.venv` in this workspace. If you need to recreate:
 
 ```powershell
-cd "d:\node-python\python-sentiment-service"
+cd "python-sentiment-service"
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirement.txt
-D:\node-python\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --port 8000
+.venv\Scripts\python.exe -m uvicorn app.main:app --reload --port 8000
 ```
 
 Open the FastAPI docs at `http://localhost:8000/docs` and the Node server at `http://localhost:3001` (socket server).
